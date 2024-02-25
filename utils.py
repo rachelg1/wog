@@ -1,3 +1,11 @@
+SCORES_FILE_NAME = 'Scores.txt'
+BAD_RETURN_CODE = 400
+
+
+def screen_cleaner():
+    print("\033[A                             \033[A")
+
+
 def integer_input_validation(prompt, min_val, max_val):
     while True:
         value = integer_input(prompt)

@@ -1,4 +1,5 @@
 from games import guess_game, memory_game, currency_roulette_game
+from score import add_score
 from utils import integer_input_validation
 
 
@@ -25,4 +26,8 @@ def start_play():
     else:
         result = currency_roulette_game.play(level)
 
-    print('You Win!') if result else print('Oh, you lose')
+    if result:
+        print('You Win!')
+        add_score(level)
+    else:
+        print('Oh, you lose')
