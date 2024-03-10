@@ -1,0 +1,3 @@
+selenium
+flask
+currency_converter
