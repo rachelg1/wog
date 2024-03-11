@@ -1,0 +1,6 @@
+version: '3.1'
+services:
+  wog:
+    image: wog:1.0.7
+    ports:
+      - 5002:5000
