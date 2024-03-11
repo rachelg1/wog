@@ -6,7 +6,6 @@ def test_scores_service(url):
     driver = webdriver.Chrome()
     driver.get(url)
     score = driver.find_element(By.ID, 'score').text
-    print(score)
     return 1 <= int(score) <= 1000
 
 
