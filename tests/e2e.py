@@ -7,7 +7,7 @@ def test_scores_service(url):
     driver.get(url)
     score = driver.find_element(By.ID, 'score').text
     print(score)
-    return 1 >= int(score) >= 1000
+    return 1 <= int(score) <= 1000
 
 
 def main_function(url):
